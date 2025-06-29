@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Exemplo - Notícia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "footer";
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            grid-area: header;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+            grid-area: nav;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            grid-area: main;
+            width: 100%;
+        }
+        .news-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .ad-section {
+            background: #e2e2e2;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jornal Exemplo</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Política</a>
+        <a href="#">Esportes</a>
+        <a href="#">Cultura</a>
+    </nav>
+    <main>
+        <h2>Nova Iniciativa Ambiental é Lançada na Cidade</h2>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Imagem da notícia" class="news-image">
+        <p>
+            Nesta segunda-feira, autoridades municipais anunciaram o lançamento de um novo programa ambiental que visa aumentar as áreas verdes urbanas e promover a sustentabilidade. O projeto, que conta com a participação de voluntários e ONGs locais, prevê o plantio de mais de 10 mil árvores até o final do ano.
+        </p>
+        <div class="ad-section">
+            <strong>Publicidade:</strong> <br>
+            Aproveite a promoção especial da Loja Verde! Descontos em produtos ecológicos até domingo.
+        </div>
+        <p>
+            Segundo a prefeita, a iniciativa faz parte de um plano maior para tornar a cidade referência em qualidade de vida e respeito ao meio ambiente. Moradores interessados em participar podem se inscrever pelo site oficial da prefeitura.
+        </p>
+    </main>
+    <footer>
+        Jornal Exemplo &copy; 2025 &mdash; Todos os direitos reservados. | Contato: contato@jornalexemplo.com
+    </footer>
+</body>
+</html>
